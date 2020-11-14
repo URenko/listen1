@@ -184,7 +184,7 @@ function build_kuwo() {
         }).then((response) => {
           let { data } = response;
           if (data.success===false) {
-            // token not valid
+            /*// token not valid
             return hm({
               url: token_url,
               method: 'GET',
@@ -192,7 +192,7 @@ function build_kuwo() {
             }).then((response) => {
               // now token valid, call myself
               return kw_search(url, hm, se).success(fn);
-            });
+            });*/;
           }
 
           let tracks = data.data.list.map((item)=>{
