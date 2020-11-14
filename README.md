@@ -1,3 +1,16 @@
+Listen 1
+==========
+这是Listen1的只需安装UserScript的网页版本。
+
+优点：无需等待浏览器扩展上架，点击即可使用。
+
+- 步骤1：[点此安装UserScript](https://raw.githubusercontent.com/URenko/listen1/master/userscript.js)（先确保你安装了[Violentmonkey](https://violentmonkey.github.io)之类的UserScript管理器）；
+- 步骤2：[点此打开网页](https://urenko.github.io/listen1/listen1.html)。
+
+可能存在的问题：无法修改audio的`referer`。可能的解决方案：MSE。
+
+## 下为原README
+
 Listen 1 (Chrome Extension) V2.17.0
 ==========
 （最后更新于2020年10月27日）

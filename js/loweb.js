@@ -56,8 +56,11 @@ function getProviderByItemId(itemId) {
 }
 
 ngloWebManager.factory('loWeb', ['$rootScope', '$log', '$http', '$httpParamSerializerJQLike',
-  ($rootScope, $log, $http, $httpParamSerializerJQLike) => ({
+  ($rootScope, $log, $http, $httpParamSerializerJQLike) => (
+  window.$rootScope = $rootScope,
+  {
     get(url) {
+	  $http = window.$http;
       const path = url.split('?')[0];
       if (path === '/show_playlist') {
         const source = getParameterByName('source', url);
