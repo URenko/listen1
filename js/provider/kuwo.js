@@ -183,7 +183,7 @@ function build_kuwo() {
           }
         }).then((response) => {
           let { data } = response;
-          if (data.success===false) {
+          if (data.success===false) {/*
             // token not valid
             return hm({
               url: token_url,
@@ -193,7 +193,7 @@ function build_kuwo() {
               // now token valid, call myself
               return kw_search(url, hm, se).success(fn);
             });
-          }
+          */}
 
           let tracks = data.data.list.map((item)=>{
             const musicrid = item.musicrid.split('_')[1];
